@@ -1,0 +1,38 @@
+.fiature__list {
+	display: flex;
+	& .fiature__img + .fiature__img {
+		margin-left: 30px;
+	}
+}
+.fiature__title {
+	margin-top: 0;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $text;
+}
+.fiature__thumb {
+	position: relative;
+}
+.fiature__text {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 370px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $white;
+	background: rgba(47, 48, 58, 0.8);
+}

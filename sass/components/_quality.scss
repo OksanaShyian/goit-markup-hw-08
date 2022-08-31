@@ -1,0 +1,39 @@
+.quality {
+	padding-bottom: 0;
+}
+.quality__list {
+	display: flex;
+	align-items: flex-start;
+	& .quality__item + .quality__item {
+		margin-left: 30px;
+		max-width: 270px;
+	}
+}
+.quality__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $text;
+}
+.quality__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $title;
+}
+.quality__picture {
+	height: 120px;
+	width: 270;
+	background-color: #f5f4fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
