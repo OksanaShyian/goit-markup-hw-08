@@ -1,3 +1,9 @@
+.fiature {
+	display: none;
+	@media screen and (min-width: $desktop) {
+		display: block;
+	}
+}
 .fiature__list {
 	display: flex;
 	& .fiature__img + .fiature__img {
