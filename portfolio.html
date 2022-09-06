@@ -48,6 +48,57 @@
 						>
 					</li>
 				</ul>
+				<button class="menu-btn__open" aria-expanded="false" type="button" data-menu-open>
+					<svg class="menu-btn__icon" width="40" height="40">
+						<use class="menu-btn__icon-open" href="./img/icons.svg#icon-menu__open"></use>
+					</svg>
+				</button>
+				<div class="mob-menu is-hidden" data-menu>
+					<button class="menu-btn__close" aria-expanded="false" type="button" data-menu-close>
+						<svg class="menu-btn__icon" width="40" height="40">
+							<use class="menu-btn__icon-close" href="./img/icons.svg#icon-menu__close"></use>
+						</svg>
+					</button>
+					<div class="mob-menu__conteiner">
+						<nav class="mob-menu__navigation">
+							<ul class="mob-menu__list list">
+								<li class="mob-menu__item">
+									<a href="./index.html" class="mob-menu__link link current">Студія</a>
+								</li>
+								<li class="mob-menu__item">
+									<a href="./portfolio.html" class="mob-menu__link link">Портфоліо</a>
+								</li>
+								<li class="mob-menu__item">
+									<a href="" class="mob-menu__link link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="mob">
+							<ul class="mob-contact list">
+								<li class="mob-contact__item">
+									<a class="mob-contact__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+								</li>
+								<li class="mob-contact__item">
+									<a class="mob-contact__link--mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+								</li>
+							</ul>
+							<ul class="menu-soc list">
+								<li class="menu-soc__item">
+									<a class="menu-soc__link link" href="">Instagram</a>
+								</li>
+								<li class="menu-soc__item">
+									<a class="menu-soc__link link" href="">Twitter</a>
+								</li>
+								<li class="menu-soc__item">
+									<a class="menu-soc__link link" href="">Facebook</a>
+								</li>
+								<li class="menu-soc__item">
+									<a class="menu-soc__link link" href="">LinkedIn</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -65,7 +116,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href="">
 								<div class="about-top-wrap">
-									<img src="./img/desktop/tehnokrak.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/tehnokrak-desk.jpg 1x, ./img/desktop/tehnokrak-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/tehnokrak-tab.jpg 1x, ./img/tablet/tehnokrak-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/tehnokrak-mob.jpg 1x, ./img/mobile/tehnokrak-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/tehnokrak-mob.jpg" width="450" height="404" alt="Tehnokrak" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -80,7 +145,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/poster.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/poster-desk.jpg 1x, ./img/desktop/poster-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/poster-tab.jpg 1x, ./img/tablet/poster-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/poster-mob.jpg 1x, ./img/mobile/poster-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/poster-mob.jpg" width="450" height="404" alt="Poster" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -95,7 +174,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/restorant.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/restorant-desk.jpg 1x, ./img/desktop/restorant-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/restorant-tab.jpg 1x, ./img/tablet/restorant-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/restorant-mob.jpg 1x, ./img/mobile/restorant-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/restorant-mob.jpg" width="450" height="404" alt="Restorant" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -110,7 +203,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/progect-prime.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/progect-prime-desk.jpg 1x, ./img/desktop/progect-prime-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/progect-prime-tab.jpg 1x, ./img/tablet/progect-prime-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/progect-prime-mob.jpg 1x, ./img/mobile/progect-prime-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/progect-prime-mob.jpg" width="450" height="404" alt="Progect-prime" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -125,7 +232,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/progect-boxes.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/progect-boxes-desk.jpg 1x, ./img/desktop/progect-boxes-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/progect-boxes-tab.jpg 1x, ./img/tablet/progect-boxes-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/progect-boxes-mob.jpg 1x, ./img/mobile/progect-boxes-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/progect-boxes-mob.jpg" width="450" height="404" alt="Progect-boxes" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -140,7 +261,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/inspiration.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/inspiration-desk.jpg 1x, ./img/desktop/inspiration-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/inspiration-tab.jpg 1x, ./img/tablet/inspiration-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/inspiration-mob.jpg 1x, ./img/mobile/inspiration-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/inspiration-mob.jpg" width="450" height="404" alt="Inspiration" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -155,7 +290,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/limited-edition.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/limited-edition-desk.jpg 1x, ./img/desktop/limited-edition-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/limited-edition-tab.jpg 1x, ./img/tablet/limited-edition-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/limited-edition-mob.jpg 1x, ./img/mobile/limited-edition-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/limited-edition-mob.jpg" width="450" height="404" alt="Limited-edition" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -170,7 +319,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/progect-lab.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/progect-lab-desk.jpg 1x, ./img/desktop/progect-lab-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/progect-lab-tab.jpg 1x, ./img/tablet/progect-lab-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/progect-lab-mob.jpg 1x, ./img/mobile/progect-lab-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/progect-lab-mob.jpg" width="450" height="404" alt="Progect-lab" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -185,7 +348,21 @@
 						<li class="about-item item">
 							<a class="about-link link" href=""
 								><div class="about-top-wrap">
-									<img src="./img/desktop/growing-bisiness.jpg" width="370" height="294" alt="Photo" />
+									<picture>
+										<source
+											srcset="./img/desktop/growing-bisiness-desk.jpg 1x, ./img/desktop/growing-bisiness-desk@2x.jpg 2x"
+											media="(min-width:1200px"
+										/>
+										<source
+											srcset="./img/tablet/growing-bisiness-tab.jpg 1x, ./img/tablet/growing-bisiness-tab@2x.jpg 2x"
+											media="(min-width:768px"
+										/>
+										<source
+											srcset="./img/mobile/growing-bisiness-mob.jpg 1x, ./img/mobile/growing-bisiness-mob@2x.jpg 2x"
+											media="(max-width:767px"
+										/>
+										<img src="./img/mobile/growing-bisiness-mob.jpg" width="450" height="404" alt="Growing-bisiness" />
+									</picture>
 									<p class="about-ap-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -276,6 +453,7 @@
 		</footer>
 		<!--JS-->
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 		<script>
 			const { height: pageHeaderHeight } = document.querySelector(".header").getBoundingClientRect();
 			document.body.style.paddingTop = `${pageHeaderHeight}px`;

@@ -44,7 +44,7 @@
 	font-style: normal;
 	transition-property: color;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: $cubic-bezier;
 }
 .contact-link {
 	color: rgba(255, 255, 255, 0.6);
@@ -55,7 +55,7 @@
 	font-style: normal;
 	transition-property: color;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: $cubic-bezier;
 }
 .adress__item {
 	margin-bottom: 9px;
@@ -88,7 +88,7 @@
 	justify-content: center;
 	transition-property: background-color, fill;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: $cubic-bezier;
 	&:hover {
 		background-color: $blue;
 	}

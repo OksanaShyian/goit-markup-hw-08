@@ -88,7 +88,7 @@
 	justify-content: center;
 	transition-property: background-color;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: $cubic-bezier;
 	&:hover,
 	&:focus {
 		background-color: $blue;
@@ -102,5 +102,5 @@
 	fill: #afb1b8;
 	transition-property: fill;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: $cubic-bezier;
 }
