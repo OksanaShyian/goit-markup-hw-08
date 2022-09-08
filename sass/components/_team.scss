@@ -93,8 +93,8 @@
 	&:focus {
 		background-color: $blue;
 	}
-	&:hover .soc-icon,
-	&:focus .soc-icon {
+	&:hover .soc__icon,
+	&:focus .ssoc__icon {
 		fill: $white;
 	}
 }

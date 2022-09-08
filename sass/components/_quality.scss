@@ -35,8 +35,10 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: $text;
-	// @media screen and (min-width:$tablet){
-	// text-align: left;
+	text-align: center;
+	@media screen and (min-width: $tablet) {
+		text-align: left;
+	}
 }
 .quality__text {
 	margin-top: 0;

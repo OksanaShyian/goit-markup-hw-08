@@ -38,6 +38,14 @@
 	line-height: 1.18;
 	letter-spacing: 0.02em;
 	color: $text;
+	&.current {
+		position: relative;
+		color: $blue;
+	}
+	&:hover,
+	&:focus {
+		opacity: 0.9;
+	}
 }
 
 .mob-contact__link {
